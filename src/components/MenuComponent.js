@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle,Button, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
@@ -14,6 +14,7 @@ function RenderMenuItem({dish, onClick}) {
                 </CardImgOverlay>        
             </Link>
         </Card>
+    
             
     );
 }
@@ -62,9 +63,17 @@ const Menu = (props) => {
                     {menu}
                 </div>
                 <div className="row">
-                    
                 </div>
+                <Button outline color="secondary">
+                    <span className="fa fa-pencil fa-lg"></span> Upload Document
+                </Button>
+                <Button outline color="secondary">
+                    <span className="fa fa-pencil fa-lg"></span> Delete Document
+                </Button>
             </div>
+
+
+
         );
     }
 }

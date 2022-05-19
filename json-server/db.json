@@ -4,204 +4,97 @@
       "id": 0,
       "name": "Secure Digital Signatures",
       "image": "images/doc.jpg",
-      "category": "mains",
+      "category": "PDF",
       "label": "Hot",
       "price": "4.99",
       "featured": true,
-      "description": "Authenticate the procedence of your documents with our service!"
+      "description": "introduction to firma"
     },
     {
       "id": 1,
-      "name": "Zucchipakoda",
-      "image": "images/zucchipakoda.png",
-      "category": "appetizer",
+      "name": "Notas SwArch",
+      "image": "images/doc.jpg",
+      "category": "PDF",
       "label": "",
       "price": "1.99",
       "featured": false,
-      "description": "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce"
+      "description": "Grades for group 1A"
     },
     {
       "id": 2,
-      "name": "Vadonut",
-      "image": "images/vadonut.png",
-      "category": "appetizer",
+      "name": "Invoice #1",
+      "image": "images/doc.jpg",
+      "category": "PDF",
       "label": "New",
       "price": "1.99",
       "featured": false,
-      "description": "A quintessential ConFusion experience, is it a vada or is it a donut?"
+      "description": "Invoice for my company"
     },
     {
       "id": 3,
-      "name": "ElaiCheese Cake",
-      "image": "images/elaicheesecake.png",
-      "category": "dessert",
+      "name": "React tutorial",
+      "image": "images/doc.jpg",
+      "category": "PDF",
       "label": "",
       "price": "2.99",
       "featured": false,
-      "description": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms"
+      "description": "Tutorial for using React"
+    },
+    {
+      "id": 4,
+      "name": "Notas SwArch",
+      "image": "images/doc.jpg",
+      "category": "PDF",
+      "label": "",
+      "price": "1.99",
+      "featured": false,
+      "description": "Grades for group 1A"
+    },
+    {
+      "id": 5,
+      "name": "Invoice #1",
+      "image": "images/doc.jpg",
+      "category": "PDF",
+      "label": "New",
+      "price": "1.99",
+      "featured": false,
+      "description": "Invoice for my company"
     }
   ],
   "comments": [
     {
       "id": 0,
       "dishId": 0,
-      "rating": 5,
-      "comment": "Entregable 1",
-      "author": "John Lemon",
-      "date": "2012-10-16T17:57:28.556094Z"
+      "rating": 4,
+      "comment": "Signatrure status:",
+      "author": "Signed! on:",
+      "date": "2014-09-05T17:57:28.556094Z"
     },
     {
       "id": 1,
-      "dishId": 0,
+      "dishId": 1,
       "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-      "author": "Paul McVites",
-      "date": "2014-09-05T17:57:28.556094Z"
+      "comment": "Signatrure status:",
+      "author": "Signed! on:",
+      "date": "2012-10-16T17:57:28.556094Z"
     },
     {
       "id": 2,
-      "dishId": 0,
-      "rating": 3,
-      "comment": "Eat it, just eat it!",
-      "author": "Michael Jaikishan",
-      "date": "2015-02-13T17:57:28.556094Z"
+      "dishId": 2,
+      "rating": 4,
+      "comment": "Signatrure status:",
+      "author": "Signed! on:",
+      "date": "2012-10-16T17:57:28.556094Z"
     },
     {
       "id": 3,
-      "dishId": 0,
+      "dishId": 3,
       "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
-      "author": "Ringo Starry",
-      "date": "2013-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 4,
-      "dishId": 0,
-      "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
-      "author": "25 Cent",
-      "date": "2011-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 5,
-      "dishId": 1,
-      "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
-      "author": "John Lemon",
+      "comment": "Signatrure status:",
+      "author": "Signed! on:",
       "date": "2012-10-16T17:57:28.556094Z"
-    },
-    {
-      "id": 6,
-      "dishId": 1,
-      "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-      "author": "Paul McVites",
-      "date": "2014-09-05T17:57:28.556094Z"
-    },
-    {
-      "id": 7,
-      "dishId": 1,
-      "rating": 3,
-      "comment": "Eat it, just eat it!",
-      "author": "Michael Jaikishan",
-      "date": "2015-02-13T17:57:28.556094Z"
-    },
-    {
-      "id": 8,
-      "dishId": 1,
-      "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
-      "author": "Ringo Starry",
-      "date": "2013-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 9,
-      "dishId": 1,
-      "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
-      "author": "25 Cent",
-      "date": "2011-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 10,
-      "dishId": 2,
-      "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
-      "author": "John Lemon",
-      "date": "2012-10-16T17:57:28.556094Z"
-    },
-    {
-      "id": 11,
-      "dishId": 2,
-      "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-      "author": "Paul McVites",
-      "date": "2014-09-05T17:57:28.556094Z"
-    },
-    {
-      "id": 12,
-      "dishId": 2,
-      "rating": 3,
-      "comment": "Eat it, just eat it!",
-      "author": "Michael Jaikishan",
-      "date": "2015-02-13T17:57:28.556094Z"
-    },
-    {
-      "id": 13,
-      "dishId": 2,
-      "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
-      "author": "Ringo Starry",
-      "date": "2013-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 14,
-      "dishId": 2,
-      "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
-      "author": "25 Cent",
-      "date": "2011-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 15,
-      "dishId": 3,
-      "rating": 5,
-      "comment": "Imagine all the eatables, living in conFusion!",
-      "author": "John Lemon",
-      "date": "2012-10-16T17:57:28.556094Z"
-    },
-    {
-      "id": 16,
-      "dishId": 3,
-      "rating": 4,
-      "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-      "author": "Paul McVites",
-      "date": "2014-09-05T17:57:28.556094Z"
-    },
-    {
-      "id": 17,
-      "dishId": 3,
-      "rating": 3,
-      "comment": "Eat it, just eat it!",
-      "author": "Michael Jaikishan",
-      "date": "2015-02-13T17:57:28.556094Z"
-    },
-    {
-      "id": 18,
-      "dishId": 3,
-      "rating": 4,
-      "comment": "Ultimate, Reaching for the stars!",
-      "author": "Ringo Starry",
-      "date": "2013-12-02T17:57:28.556094Z"
-    },
-    {
-      "id": 19,
-      "dishId": 3,
-      "rating": 2,
-      "comment": "It's your birthday, we're gonna party!",
-      "author": "25 Cent",
-      "date": "2011-12-02T17:57:28.556094Z"
     }
+
   ],
   "promotions": [
     {
