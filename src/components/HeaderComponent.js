@@ -30,8 +30,7 @@ class Header extends Component {
 
     handleLogin(event) {
         this.toggleModal();
-        alert("Username: " + this.username.value + " Password: " + this.password.value
-            + " Remember: " + this.remember.checked);
+        alert("Usuario " + this.username.value + " logueado correctamente");
         event.preventDefault();
 
     }
@@ -58,7 +57,7 @@ class Header extends Component {
                                 <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink className="nav-link" to='/.'><span className="fa fa-user fa-lg"></span> Account </NavLink>
+                                <NavLink className="nav-link" to='/account'><span className="fa fa-user fa-lg"></span> Account </NavLink>
                             </NavItem>
                             </Nav>
                             <Nav className="ml-auto" navbar>
