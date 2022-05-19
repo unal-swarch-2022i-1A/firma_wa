@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label } from 'reactstrap';
 import {NavLink} from 'react-router-dom';
+import { Redirect } from "react-router-dom";
 
 class Header extends Component {
 
@@ -9,7 +10,8 @@ class Header extends Component {
         super(props);
         this.state = {
             isNavOpen: false,
-            isModalOpen: false
+            isModalOpen: false,
+            condition: false
         };
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
@@ -30,8 +32,14 @@ class Header extends Component {
 
     handleLogin(event) {
         this.toggleModal();
-        alert("Usuario " + this.username.value + " logueado correctamente");
-        event.preventDefault();
+        if (this.username.value == "peterp" && this.password.value == "09871234"){
+            alert("Usuario " + this.username.value + " logueado correctamente");
+            return <Redirect to='/account'/>;
+        }
+        else {
+            alert("Usuario y/o constraseña erróneas");
+            event.preventDefault();
+        }
 
     }
 
@@ -60,7 +68,7 @@ class Header extends Component {
                                 <NavLink className="nav-link" to='/account'><span className="fa fa-user fa-lg"></span> Account </NavLink>
                             </NavItem>
                             </Nav>
-                            <Nav className="ml-auto" navbar>
+                            <Nav onSubmit={this.handleLogin} className="ml-auto" navbar>
                                 <NavItem>
                                     <Button outline onClick={this.toggleModal}>
                                         <span className="fa fa-sign-in fa-lg"></span> Login
