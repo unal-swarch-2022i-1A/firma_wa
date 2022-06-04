@@ -1,4 +1,4 @@
-## Firma Web Aplication
+## Firma Web Application
 
 ## Yarn
 In the project directory, you can run:
