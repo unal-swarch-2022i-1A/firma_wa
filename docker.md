@@ -32,6 +32,36 @@ docker exec -it firma_wa_dev /bin/bash
 ## Production: Nginx
 ```bash
 docker rm -f firma_wa
-docker run -dit --name firma_wa -v $(pwd)/build:/usr/share/nginx/html -p 80:80 nginx
+```
+Compilar imagen:
+```bash
+docker build -t firma_wa . -f Dockerfile.prod
+```
+Arrancar contenedor
+```bash
+docker run -dit \
+    --name firma_wa \
+    -v $(pwd)/build:/usr/share/nginx/html \
+    -p 80:80 \
+    -p 443:443 \
+    firma_wa
+```
+Revisar logs del contenedor
+```bash
+docker logs --tail 1000 -f firma_wa 
+```
+Conectarse a la shell del contenedor
+```bash
 docker exec -it firma_wa /bin/bash
+```
+
+Todo en una línea
+```bash
+docker rm -f firma_wa && docker build -t firma_wa . -f Dockerfile.prod && \
+docker run -it \
+    --name firma_wa \
+    -v $(pwd)/build:/usr/share/nginx/html \
+    -p 80:80 \
+    -p 443:443 \
+    firma_wa
 ```
