@@ -4,6 +4,7 @@ import Menu from './MenuComponent';
 import Contact from './ContactComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+import Soap from './SoapComponent';
 import DishDetail from './DishDetailComponent.js';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import About from './AboutComponent';
@@ -12,6 +13,7 @@ import { connect } from 'react-redux';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
 
 const mapStoreToProps = state => {
   return {
@@ -84,6 +86,7 @@ class Main extends Component {
               <Route path="/home" component={HomePage} />
               <Route exact path="/aboutus" component={() => <About leaders={this.props.leaders} />} />
               <Route exact path="/account" component={() => <Account leaders={this.props.leaders} />} />
+              <Route exact path="/soap" component={() => <Soap />} />
               <Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} />} />
               <Route path="/menu/:dishId" component={DishWithId} />
               <Route exact path='/contactus' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />              <Redirect to="/home" />

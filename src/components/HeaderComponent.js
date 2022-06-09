@@ -32,7 +32,7 @@ class Header extends Component {
 
     handleLogin(event) {
         this.toggleModal();
-        if (this.username.value == "peterp" && this.password.value == "09871234"){
+        if (this.username.value == "NikcQ@urgae.com" && this.password.value == "12345"){
             alert("Usuario " + this.username.value + " logueado correctamente");
             return <Redirect to='/account'/>;
         }
@@ -66,6 +66,9 @@ class Header extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink className="nav-link" to='/account'><span className="fa fa-user fa-lg"></span> Account </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink className="nav-link" to='/Soap'><span className="fa fa-barcode fa-lg"></span> SOAP </NavLink>
                             </NavItem>
                             </Nav>
                             <Nav onSubmit={this.handleLogin} className="ml-auto" navbar>

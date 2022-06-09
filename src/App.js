@@ -4,10 +4,15 @@ import './App.css';
 import {BrowserRouter} from 'react-router-dom';
 import { Provider} from 'react-redux';
 import { ConfigureStore } from './redux/configureStore';
+import { interfaceurl } from './shared/baseUrl';
 
 const store = ConfigureStore();
 
+
+
 class App extends Component {
+
+
 
   render() {
     return (
