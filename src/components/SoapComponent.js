@@ -14,39 +14,29 @@ class Soap extends Component{
     
       componentDidMount(){
     
-        fetch(interfaceurl)
-        .then(res => res.json())
-        .then(json => {
-          this.setState({
-            isLoaded: true,
-            items: json,
-          })
-        });
+        const url = interfaceurl;
+        fetch(url, {
+            "method": "GET",
+            "headers": {
+                "Content-Type": "application/json"
+            }
+            
+        })
+        .then(res =>{console.log(res.text())} )
     
       }
 
+
+
       render(){
 
-        var { isLoaded, items} = this.state;
-        if(!isLoaded){
-            return (
-                <div class="loading">
-                    <Loading />
-                </div>
-            );
-        } else {
+        
             return(
                 <div class="loaded">
-                    <ul>
-                    {items.map(item => (
-                        <li key={item.id}>
-                            Name: {item.name} | Email: {item.email}
-                        </li>
-                    ))}
-                </ul>
+                    
                 </div>
             );
-        }
+        
 
 
       }
