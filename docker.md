@@ -35,7 +35,7 @@ docker rm -f firma_wa
 ```
 Compilar imagen:
 ```bash
-docker build -t firma_wa . -f Dockerfile.prod
+docker build -t firma_wa . -f Dockerfile
 ```
 Arrancar contenedor
 ```bash
@@ -57,7 +57,7 @@ docker exec -it firma_wa /bin/bash
 
 Todo en una línea
 ```bash
-docker rm -f firma_wa && docker build -t firma_wa . -f Dockerfile.prod && \
+docker rm -f firma_wa && docker build -t firma_wa . -f Dockerfile && \
 docker run -it \
     --name firma_wa \
     -v $(pwd)/build:/usr/share/nginx/html \
