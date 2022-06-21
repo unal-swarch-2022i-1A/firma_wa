@@ -38,7 +38,7 @@ class CommentForm extends Component {
 
             <div>
                 <Button outline color="secondary" onClick={this.toggleModal}>
-                    <span className="fa fa-pencil fa-lg"></span> Submit Comment
+                    <span className="fa fa-pencil fa-lg"></span> Create Document
                 </Button>
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
@@ -46,23 +46,10 @@ class CommentForm extends Component {
                     <ModalBody>
                         <LocalForm onSubmit={(values) => this.handleSubmit(values)}>
                             <Row className="form-group">
-                                <Label htmlFor="rating" className="ml-3">Rating</Label>
-                                <Col md={12}>
-                                    <Control.select model=".rating" id="rating" name="rating"
-                                        className="form-control">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </Control.select>
-                                </Col>
-                            </Row>
-                            <Row className="form-group">
-                                <Label htmlFor="author" className="ml-3">Your Name</Label>
+                                <Label htmlFor="author" className="ml-3">Author name</Label>
                                 <Col md={12}>
                                     <Control.text model=".author" id="author"
-                                        name="author" placeholder="Your Name"
+                                        name="author" placeholder="Author Name"
                                         className="form-control"
                                         validators={{
                                             required, minLength: minLength(3), maxLength: maxLength(15)
@@ -80,11 +67,24 @@ class CommentForm extends Component {
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="yourname" className="ml-3">Comment</Label>
+                            <Label htmlFor="author" className="ml-3">Document Name</Label>
                                 <Col md={12}>
-                                    <Control.textarea model=".comment" id="comment"
-                                        name="comment" placeholder="Comment"
-                                        rows="6" className="form-control" />
+                                    <Control.text model=".author" id="author"
+                                        name="author" placeholder="Document Name"
+                                        className="form-control"
+                                        validators={{
+                                            required, minLength: minLength(3), maxLength: maxLength(15)
+                                        }} />
+                                    <Errors
+                                        className="text-danger"
+                                        model=".author"
+                                        show="touched"
+                                        messages={{
+                                            required: 'Required',
+                                            minLength: 'Must be greater than 2 characters',
+                                            maxLength: 'Must be 15 characters or less'
+                                        }}
+                                    />
                                 </Col>
                             </Row>
                             <Row className="form-group">
