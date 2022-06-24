@@ -1,22 +1,17 @@
-// React base
 import React from 'react';
-import ReactDOM from 'react-dom';
-// Front-end CSS
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// Icons
-import 'font-awesome/css/font-awesome.css';
-// Social CSS buttons
-import 'bootstrap-social/bootstrap-social.css';
-// App Component
 import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import registerServiceWorker from './registerServiceWorker';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-
-/**
- * @param element The component we want to render, 
- * @param container The DOM element inside which we want the component to be rendered
- */
-ReactDOM.render(<App/>, document.getElementById('root'));
-registerServiceWorker();
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
