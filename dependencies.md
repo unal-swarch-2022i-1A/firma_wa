@@ -5,6 +5,9 @@ A continuaciÃ³n se describen las dependencias usadas en este proyecto y su propÃ
 [Acerca de react](./about_react.md)
 > The react package contains only the functionality necessary to define React components. It is typically used together with a React renderer like react-dom for the web, or react-native for the native environments.
 
+### React 18 - 29th, 2022
+> Warning: `ReactDOM.render` is no longer supported in React 18. Use createRoot instead. Until you switch to the new API, your app will behave as if it's running React 17. Learn more: https://reactjs.org/link/switch-to-createroot
+
 ### react-dom
 > This package serves as the entry point to the DOM and server renderers for React. It is intended to be paired with the generic React package, which is shipped as react to npm.
 

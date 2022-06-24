@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// Componentes de la plantilla
 import Home from './HomeComponent';
 import Menu from './MenuComponent';
 import Contact from './ContactComponent';
@@ -6,9 +7,11 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Soap from './SoapComponent';
 import DishDetail from './DishDetailComponent.js';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import About from './AboutComponent';
 import Account from './AccountComponent';
+
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+
 import { connect } from 'react-redux';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
