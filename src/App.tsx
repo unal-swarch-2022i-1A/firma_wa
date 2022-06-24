@@ -1,8 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-//UI
+// MUI
 import Button from '@mui/material/Button';
-
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>       
-        <Button variant="contained">Hello World</Button>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <Button variant="contained">MUI button</Button>
       </header>
     </div>
   );
