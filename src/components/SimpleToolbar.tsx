@@ -8,6 +8,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate } from 'react-router-dom';
 
 interface Props {
+    /**
+     * Título de la barra
+     */
     title:string;
 }
 
