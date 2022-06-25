@@ -19,11 +19,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Props from './Props.interface';
-
-/**
- * Los elementos `Link` deben renderizarse dentro de un `Router`
- */
-import { Link } from "react-router-dom";
+import { 
+    Outlet, // Permite manejar rutas embebidas
+    Link // Los elementos `Link` deben renderizarse dentro de un `Router`
+} from "react-router-dom";
 
 const drawerWidth = 240;
 /**
@@ -126,7 +125,7 @@ export default function DrawerAppBar(props: Props) {
             </Box>
             <Box component="main" sx={{ p: 3 }}>
                 <Toolbar />
-                {props.children}
+                <Outlet />
             </Box>
         </Box>
     );

@@ -16,12 +16,12 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <DrawerAppBar>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Signin" element={<Signin />} />
-        </Routes>
-      </DrawerAppBar>
+      <Routes>
+        <Route path="/" element={<DrawerAppBar />}>
+          <Route path="" element={<Home />} />          
+        </Route>
+        <Route path="Signin" element={<Signin />} />
+      </Routes>
     </BrowserRouter>
   );
 }
