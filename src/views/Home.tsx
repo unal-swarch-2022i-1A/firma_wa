@@ -1,7 +1,9 @@
-export default function Home() {
+import ListDocs from './fragments/ListDocs';
+
+function Home() {
     return (
-        <main style={{ padding: "1rem 0" }}>
-            <h2>Home</h2>
-        </main>
+        <ListDocs />
     );
 }
+
+export default Home
