@@ -4,7 +4,7 @@ import DrawerAppBar from './components/DrawerAppBar';
 
 // Pages
 import Home from './views/Home';
-import Signin from './views/Signin';
+import SignIn from './views/SignIn';
 
 // Routing
 import {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<DrawerAppBar />}>
           <Route path="" element={<Home />} />          
         </Route>
-        <Route path="Signin" element={<Signin />} />
+        <Route path="Signin" element={<SignIn />} />
       </Routes>
     </BrowserRouter>
   );
