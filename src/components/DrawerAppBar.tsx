@@ -19,7 +19,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Props from './Props.interface';
-import { 
+import {
     Outlet, // Permite manejar rutas embebidas
     Link // Los elementos `Link` deben renderizarse dentro de un `Router`
 } from "react-router-dom";
@@ -28,7 +28,11 @@ const drawerWidth = 240;
 /**
  * Arreglo de tuplas [title,url] para navegación
  */
-const navItems: [string, string][] = [["Home", "/"], ["Sign in", "/signin"]]
+const navItems: [string, string][] = [
+    ["Home", "/"],
+    ["Iniciar sesión", "/signin"],
+    //["Registrar", "/signup"]
+]
 
 export default function DrawerAppBar(props: Props) {
     const { window } = props;
@@ -43,13 +47,11 @@ export default function DrawerAppBar(props: Props) {
      */
     const buttons = (
         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-        {navItems.map(([item, url]) => (
-            <Link to={url}>
-                <Button key={item} sx={{ color: '#fff' }}>
+            {navItems.map(([item, url]) => (
+                <Button href={url} key={item} sx={{ color: '#fff' }}>
                     {item}
                 </Button>
-            </Link>
-        ))}
+            ))}
         </Box>
     )
 
@@ -101,9 +103,9 @@ export default function DrawerAppBar(props: Props) {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        MUI
+                        FIRMA
                     </Typography>
-                    {buttons}                    
+                    {buttons}
                 </Toolbar>
             </AppBar>
             <Box component="nav">

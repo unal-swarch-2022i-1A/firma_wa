@@ -74,9 +74,9 @@ export default function SignIn() {
                             >
                                 Iniciar sesión
                             </Button>
-                            <Grid container>
+                            <Grid container justifyContent="flex-end">
                                 <Grid item>
-                                    <Link href="#" variant="body2">
+                                    <Link href="signup" variant="body2">
                                         {"¿No tienes cuenta? Regístrate"}
                                     </Link>
                                 </Grid>

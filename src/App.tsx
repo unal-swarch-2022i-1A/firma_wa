@@ -5,6 +5,7 @@ import DrawerAppBar from './components/DrawerAppBar';
 // Pages
 import Home from './views/Home';
 import SignIn from './views/SignIn';
+import SignUp from './views/SignUp';
 
 // Routing
 import {
@@ -13,6 +14,7 @@ import {
   Route,
 } from "react-router-dom";
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,7 +22,8 @@ function App() {
         <Route path="/" element={<DrawerAppBar />}>
           <Route path="" element={<Home />} />          
         </Route>
-        <Route path="Signin" element={<SignIn />} />
+        <Route path="signin" element={<SignIn />} />
+        <Route path="signup" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
   );
