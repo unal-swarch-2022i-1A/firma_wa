@@ -29,6 +29,8 @@ El directorio `public`  contiene los archivos en los cuales react inyectará có
 
 En el directorio `src` esta todo el código fuente.
 
+https://www.taniarascia.com/react-architecture-directory-structure
+
 ## Glosario de React
 
 ### **JSX**

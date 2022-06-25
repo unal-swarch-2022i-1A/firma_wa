@@ -49,3 +49,7 @@ The `web-vitals` library is a tiny (~1K), modular library for measuring all the 
 ### @fontsource/roboto
 > The Roboto font will not be automatically loaded by MUI. You are responsible for loading any fonts used in your application. 
 
+## Routing
+
+### react-router-dom@6
+> 
