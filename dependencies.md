@@ -52,4 +52,4 @@ The `web-vitals` library is a tiny (~1K), modular library for measuring all the 
 ## Routing
 
 ### react-router-dom@6
-> 
+> The react-router-dom package contains bindings for using React Router in web applications. Please see the Getting Started guide for more information on how to get started with React Router.
