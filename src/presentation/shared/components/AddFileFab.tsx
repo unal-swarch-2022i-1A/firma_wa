@@ -5,12 +5,12 @@ interface Props {
 }
 export default function FloatingActionButtons(props: Props) {
     return (
-        <Fab color="primary" aria-label="add" sx={{
+        <Fab onClick={props.onClick} color="primary" aria-label="add" sx={{
             position: "fixed",
             bottom: (theme) => theme.spacing(5),
             right: (theme) => theme.spacing(5)
         }}>
-            <UploadIcon onClick={props.onClick}/>
+            <UploadIcon />
         </Fab>
     );
 }

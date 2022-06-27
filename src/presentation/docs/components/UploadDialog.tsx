@@ -29,7 +29,12 @@ export default function AlertDialog(props: Props) {
                 </DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description">
-                        TODO: Acá va el formulario para subir el archivo
+                        <input
+                            accept="image/*"
+                            id="raised-button-file"
+                            multiple
+                            type="file"
+                        />
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
@@ -37,7 +42,7 @@ export default function AlertDialog(props: Props) {
                         Cancelar
                     </Button>
                     <Button onClick={handleClose} autoFocus>
-                        Agree
+                        Cargar
                     </Button>
                 </DialogActions>
             </Dialog>
