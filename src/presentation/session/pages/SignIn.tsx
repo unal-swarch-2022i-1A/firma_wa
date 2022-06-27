@@ -14,7 +14,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 // Components
-import Page from '../components/Page';
+import Page from '../../shared/components/Page';
 
 const theme = createTheme();
 

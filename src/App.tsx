@@ -1,11 +1,11 @@
 // Base imports
 import './App.css';
-import DrawerAppBar from './components/DrawerAppBar';
+import DrawerAppBar from './presentation/shared/components/DrawerAppBar';
 
 // Pages
-import Home from './views/Home';
-import SignIn from './views/SignIn';
-import SignUp from './views/SignUp';
+import Home from './presentation/main/Home';
+import SignIn from './presentation/session/pages/SignIn';
+import SignUp from './presentation/session/pages/SignUp';
 
 // Routing
 import {

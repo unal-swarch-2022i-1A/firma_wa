@@ -1,4 +1,4 @@
-import ListDocs from './fragments/ListDocs';
+import ListDocs from './ListDocs';
 
 function Home() {
     return (

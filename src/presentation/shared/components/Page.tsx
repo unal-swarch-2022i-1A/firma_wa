@@ -1,6 +1,6 @@
 // Components
 import Box from "@mui/material/Box";
-import SimpleToolbar from "../components/SimpleToolbar";
+import SimpleToolbar from "./SimpleToolbar";
 
 interface Props {
     /**
