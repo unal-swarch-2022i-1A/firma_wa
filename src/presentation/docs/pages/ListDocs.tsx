@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
@@ -13,12 +12,12 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import FolderIcon from '@mui/icons-material/Folder';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SignIcon from '../../../assets/icons/SignIcon';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import AddFileFab from '../../shared/components/AddFileFab';
+import UploadDialog from '../components/UploadDialog';
 
 /**
  * Lista de archivos generados con https://www.mockaroo.com/
@@ -180,11 +179,20 @@ export default function ListDocs() {
     // States:
     const [isCompact, setIsCompact] = React.useState(false);
     const [isFileIdShowed, setIsFileIdShowed] = React.useState(false);
+    const [openUploadDialog, setOpenUploadDialog] = React.useState(false);    
+    const handleClickOpenUploadDialog = () => {
+        setOpenUploadDialog(true);
+      };
+    
+      const handleCloseUploadDialog = () => {
+        setOpenUploadDialog(false);
+      };    
 
     // React element:
     return (
         <Container>
             <Box>
+                <UploadDialog open={openUploadDialog} handleCloseUploadDialog={handleCloseUploadDialog}/>
                 <Grid container justifyContent="flex-end">
                     <Grid item>
                         <FormGroup row sx={{ display: 'inline' }}>
@@ -219,6 +227,7 @@ export default function ListDocs() {
                     </Grid>
                 </Grid>
             </Box>
+            <AddFileFab onClick={handleClickOpenUploadDialog}/>
         </Container>
     );
 }
